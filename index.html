@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rumah Makan Nusantara - Sajian masakan Indonesia yang lezat dan berkualitas.">
+  <title>Rumah Makan jampang
+
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">🍽️</span>
+      <span>Rasa<span class="accent">Nusantara</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Beranda</a>
+      <a href="#menu">Menu</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <a href="#menu" class="nav-button">Pesan Sekarang</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">SELAMAT DATANG DI Rumah makan khanif umam
+
+        </span>
+        <h1>Cita Rasa Tradisi jampang,<br><span>Penuh Kelezatan.</span></h1>
+        <p>
+          Nikmati kelezatan masakan khas Indonesia yang dibuat
+          dari bahan pilihan, bumbu rempah asli, dan sepenuh hati.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Lihat Menu <span>→</span></a>
+          <a href="#tentang" class="btn btn-outline">Tentang Kami</a>
+        </div>
+        <div class="hero-info">
+          <div><strong>100%</strong><span>Bahan Segar</span></div>
+          <div><strong>20+</strong><span>Pilihan Menu</span></div>
+          <div><strong>Halal</strong><span>dan Berkualitas</span></div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/ayam.jpg" alt="Ayam goreng spesial rumah makan"
+             onerror="this.style.display='none'; this.parentElement.classList.add('image-fallback')">
+        <div class="hero-badge">
+          <span>⭐ 4.9</span>
+          <small>Favorit Pelanggan</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <span>🥬</span>
+        <div><h3>Bahan Segar</h3><p>Dipilih setiap hari</p></div>
+      </div>
+      <div class="feature">
+        <span>👨‍🍳</span>
+        <div><h3>Racikan Spesial</h3><p>Bumbu khas Nusantara</p></div>
+      </div>
+      <div class="feature">
+        <span>🛵</span>
+        <div><h3>Pesan Mudah</h3><p>Praktis dan cepat</p></div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">MENU PILIHAN</span>
+        <h2>Hidangan <span>Favorit Kami</span></h2>
+        <p>Temukan hidangan lezat yang cocok untuk menemani harimu.</p>
+      </div>
+
+      <div class="menu-toolbar">
+        <div class="categories" id="categories">
+          <button class="category active" data-category="Semua">Semua</button>
+          <button class="category" data-category="Makanan">Makanan</button>
+          <button class="category" data-category="Minuman">Minuman</button>
+          <button class="category" data-category="Camilan">Camilan</button>
+        </div>
+        <input type="search" id="searchMenu" placeholder="Cari menu..." aria-label="Cari menu">
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Menu dibuat otomatis oleh JavaScript -->
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>Menu tidak ditemukan.</p>
+    </section>
+
+    <section class="about-section" id="tentang">
+      <div class="about-image">
+        <img src="images/rendang.jpg" alt="Masakan khas Nusantara"
+             onerror="this.style.display='none'; this.parentElement.classList.add('image-fallback')">
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">CERITA KAMI</span>
+        <h2>Masakan Rumahan,<br><span>Rasa Istimewa.</span></h2>
+        <p>
+          Rasa Nusantara hadir untuk membawa kehangatan masakan Indonesia
+          ke meja makan Anda. Setiap hidangan diracik dengan rempah pilihan
+          dan resep yang menjaga cita rasa tradisional.
+        </p>
+        <p>Kami percaya makanan enak selalu dimulai dari bahan terbaik dan hati yang tulus.</p>
+        <a href="#menu" class="btn btn-primary">Jelajahi Menu →</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontak">
+      <div>
+        <span class="eyebrow">KAMI SIAP MELAYANI</span>
+        <h2>Lapar? Yuk, Makan Enak!</h2>
+        <p>Hubungi kami untuk pemesanan makanan favoritmu.</p>
+      </div>
+      <a href="#" class="btn btn-light" id="contactButton">Hubungi Kami ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">
+      <span class="logo-icon">🍽️</span>
+      <span>Rasa<span class="accent">Nusantara</span></span>
+    </a>
+    <p>© <span id="year"></span> Rasa Nusantara. Dibuat dengan ❤️</p>
+    <a href="#home">Kembali ke atas ↑</a>
+  </footer>
+
+  <button class="cart-float" id="cartButton" aria-label="Buka keranjang">
+    🛒 <span>Keranjang</span> <b id="cartCount">0</b>
+  </button>
+
+  <div class="modal-overlay" id="cartModal" hidden>
+    <section class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header">
+        <h2 id="cartTitle">Keranjang Pesanan</h2>
+        <button id="closeCart" class="close-button" aria-label="Tutup keranjang">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total">
+        <span>Total Pesanan</span>
+        <strong id="cartTotal">Rp0</strong>
+      </div>
+      <label for="customerName">Nama pemesan</label>
+      <input id="customerName" type="text" placeholder="Masukkan nama Anda">
+      <label for="customerAddress">Alamat pengantaran</label>
+      <textarea id="customerAddress" placeholder="Masukkan alamat (jika diperlukan)"></textarea>
+      <button class="btn btn-primary checkout-button" id="checkoutButton">
+        Pesan via WhatsApp →
+      </button>
+      <p class="cart-note">Pesanan akan dikirim ke WhatsApp untuk konfirmasi.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
