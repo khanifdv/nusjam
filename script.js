@@ -7,7 +7,7 @@
 
 // Ganti dengan nomor WhatsApp rumah makan Anda.
 // Gunakan kode negara 62 tanpa tanda + atau angka 0 di depan.
-const NOMOR_WHATSAPP = "6281234567890";
+const NOMOR_WHATSAPP = "6285863171013";
 
 // ========================================
 // DATA MENU
